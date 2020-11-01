@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="inner-footer">
         <div className="copy">
-          <p>© {year} dejodev</p>
+          <p>© {year} Dejodev</p>
         </div>
       </div>
     </div>
