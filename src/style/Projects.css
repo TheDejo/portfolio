@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+ .card{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "links";
+
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card-image {
+  grid-area: image;
+  background: url('../images/js.png');
+  border-top-left-radius: 15px;
+  border-top-right-radius:15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card-text p{
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #2ecc71;
+}
+
+.card-links .git,
+.card-links .visit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+.projects a {
+  color: #fff;
+}
+
+.card-links .git a .icon {
+  color: #fff;
+}
+
+.card-links .git a .icon:hover {
+  transform: scale(1.2);
+}
+
+.card-links .border{
+  border-left: 1px solid #27ae60;
+}
+
+
+/* .card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
+} */
+
+.projects a:hover {
+  transform: scale(1.1);
+}
